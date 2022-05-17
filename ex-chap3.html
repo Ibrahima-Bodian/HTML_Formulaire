@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method="get" action="envoyer.html">
+		<p>composant1 du formulaire</p>
+		<p>composant2 du formulaire</p>
+		<p>
+				<label for="name">Nom : </label>
+				<input type="text" id="name" name="name" required placeholder="Ibrahima" />
+		</p>
+    			<label for="mail">Email : </label>
+    			<input type="email" id="mail" name="mail" required pattern="ibzd@gmail.com"
+    			title="veuillez saisir un adresse email en respectant les caractères requis" />
+    	<p>
+    			<label for="phone">Téléphone : </label>
+       			<input type="tel" id="phone" name="phone" required pattern="\+[3-3]{2}-\([0-0]{1}\)-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+       			title="numéro de téléphone à  10 chiffres sans espace" />
+    			
+    	</p>  	
+    	<p>
+    			<label for="pass">Mot de passe : </label>
+    			<input type="password" id="pass" name="pass" required pattern="united20"
+    			title="veuillez saisir le mot de passe" />
+    	<p>		
+    			<label for="web">Site : </label>
+    			<input type="URL" id="web" name="web"
+    			title="veuillez saisir votre adresse url" />
+    	</p>
+    	
+    	<p>
+    			<label for="datenaiss">Date de naissance : </label>
+    			<input type="date" id="datenaiss" name="datenaiss"
+    			title="veuillez saisir votre date de naissance" />
+    	</p>
+    	
+    	<p>
+    			<label for="quant">Quantité : </label>
+    			<input type="number" id="quant" name="quant" min="0" max="10" step="2" value="6"
+    			title="Saisir la quantité" />
+    	</p>
+    	
+    	<p>
+    			<label for="quant2">Quantité2 : </label>
+    			<input type="range" id="quant2" name="quant2" min="0" max="10" step="2" value="6"
+    			title="Saisir la quantité2" />
+    	</p>
+    	
+    	<p>
+    			<label for="couleur">Couleur : </label>
+    			<input type="color" id="couleur" name="couleur"
+    			title="Saisir la couleur" />
+    	</p>
+    	
+    	<p>
+    			<label for="pseudo">Votre pseudo : </label>
+    			<input type="text" id="pseudo" name="pseudo" size="10" maxlenght="6" value="toto"
+    			title="Saisir la quantité2" />
+    	</p>
+    	
+    	<p>
+    			<input type="submit" name="envoi" id="envoi" value="Envoyer" />
+    			<input type="reset" id="efface" name="efface" value="Effacer" />
+    	</p>
+    	
+    	<p>
+    			<label for="message">Votre message : </label>
+    			<textarea id="message" cols="25" rows="5">Valeur par défaut...</textarea>
+    	</p>
+    	
+    	<p>		
+    			Quel moyen de transport utilisez-vous régulièrement ? <br />
+    			<input type="checkbox" id="voiture" name="voiture" />
+    			<label for="voiture">Voiture</label> <br />
+    			<input type="checkbox" id="bus" name="bus" />
+    			<label for="bus">Bus</label> <br />
+    			<input type="checkbox" id="velo" name="velo" checked="checked" />
+    			<label for="velo">Vélo</label> <br />
+    			<input type="checkbox" id="skate" name="skate" />
+    			<label for="skate">SkateBoard(planche à roulette)</label> <br />
+    	</p>
+    	
+    	<p>		
+    			Dans quel tranche d'age vous situez-vous ? <br />
+    			<input type="radio" id="moins15" name="age" value="moins15" />
+    			<label for="moins15">Moins de 15 ans</label> <br />
+    			<input type="radio" id="15-25" name="age" value="15-25" />
+    			<label for="15-25">15-25ans</label> <br />
+    			<input type="radio" id="25-40" name="age" value="25-40" checked="checked" />
+    			<label for="25-40">25-40ans</label> <br />
+    			<input type="checkbox" id="skate" name="skate" />
+    			<label for="skate">SkateBoard(planche à roulette)</label> <br />
+    	</p>
+    	
+    	<p>
+    			<label for="transport">Choisir un moin de traznsport : </label> <br />
+    			<select id="transport" name="transport">
+    				<option value="1">Voiture</option>
+    				<option value="2">Bus</option>
+    				<option value="3" selected="selected">Métro</option>
+    			</select>
+    	</p>	
+    			<p><input type="submit" name="envoi" id="envoi" value="Envoyer"/></p>
+    	
+	 </form>
+</body>
+</html>
